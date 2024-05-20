@@ -1,0 +1,93 @@
+main {
+    max-width: 640px;
+  
+  }
+
+  
+  P {
+    padding:  10px;
+    color: black;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  nav a {
+    color: rgb(54, 93, 117);
+    padding: 10px;
+    display: block;
+  }
+
+  h1 {
+    color: steelblue;
+    padding: .5rem
+  }
+
+  
+  aside {
+    width: 20em;
+    margin: 1em; 
+    border: 1px solid rgba(0, 0, 0, 0.2); /* why use rgba instead of hex here? */
+    padding: 1em;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    Position: relative;
+  }
+  
+  aside img {
+    width: 200px;
+    height: auto;
+  }
+
+  aside h2 {
+    position: absolute;
+    top:  30px;
+    left: 100px;
+
+  }
+
+   body {
+    font-size: 16px;
+    font-family: Roboto, sans-serif, Arial;
+   }
+  
+  main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid  steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px  gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+
+  }
+  
+  p { 
+    margin: 1rem;
+    padding: 0;
+  }
+  
+  footer {
+    margin-top: 1em;
+    border-top: 1px solid #0000;
+    text-align: center;
+}
+
+/* class selectors */
+
+.box{
+  margin: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 1rem;
+  background-color: #eee;
+  color: #0000;
+}
+
+.indent {
+  padding-left: 2rem;
+}
