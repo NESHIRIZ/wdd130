@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <h1>General Quiz</h1>
+    <form action="#" method="post">
+        <div class="question">
+            <label for="q1">Question 1:</label>
+            <p>Name one of the seven wonders of the world.</p>
+            <input type="text" id="q1" name="q1">
+        </div>
+        <div class="question">
+            <label for="q2">Question 2:</label>
+            <p>Who is the fastest man in the world?</p>
+            <textarea id="q2" name="q2" rows="4"></textarea>
+        </div>
+        <div class="question">
+            <label for="q3">Question 3:</label>
+            <p>Who is the richest man in the world?</p>
+            <select id="q3" name="q3">
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="option1">Bill Gates</option>
+                <option value="option2">Mark Zurgabak</option>
+                <option value="option3">Donald Trump</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="q4">Question 4:</label>
+            <p>Which number does Christiano Ronaldo wear?</p>
+            <input type="number" id="q4" name="q4">
+        </div>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
