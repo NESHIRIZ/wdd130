@@ -1,0 +1,271 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9d9d9;
+}
+
+header,nav, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+  
+header img {
+    width: 60px; /* Adjust as needed */
+  height: auto;
+  }
+  
+ header h1 {
+    grid-column: 2;
+    margin: 0;
+  }
+  
+header nav {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+header nav a {
+    padding: 0.5rem;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+nav ul {
+   list-style-type: none;
+   margin:0;
+   padding:0;
+}
+
+nav ul li{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+main{
+   padding: 20px;
+}
+
+#company-infor,#employees,#contact-form{
+    margin-bottom: 30px;
+}
+
+#company-infor h1,#employees h2,#contact-form h2{
+    margin-top: 0;
+}
+
+#employees img{
+     width: 150px;
+     height: auto;
+     border-radius: 50%;
+}
+
+#contact-form{
+    margin-top:20px;
+}
+
+#contact-form label{
+    display: block;
+    margin-top: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"]
+#contact-form textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#contact-form button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form button{
+    background-color: #45a049;
+}
+
+.hero {
+    position: relative;
+    background-image: url('your-image-url');  /* Replace with the URL of your hero image */
+background-size: cov
+}
+
+#history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+#history h2 {
+    margin-bottom: 1rem;
+  }
+  
+.history-content {
+    /* Style as needed */
+  }
+
+
+#adventures {
+    text-align: center;
+  }
+  
+#adventures h2 {
+    margin-bottom: 1rem;
+  }
+  
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+.adventures-grid figure {
+    margin: 0;
+  }
+  
+.adventures-grid figcaption {
+    /* Style as needed */
+  }
+  
+  
+
+:root {
+    --primary-color: #0F66FF;  /* Replace with the primary color from the site plan documentation */
+--secondary-color: #FFFFFF; /* Replace with the secondary color from the site plan documentation */
+--text-color: #000000;     /* Replace with the text color from the site plan documentation */
+/* Add more color variables as needed based on the site plan documentation */
+}
+
+img.hero-image {
+    float: right;
+    margin-left: 10px;  /* Adjust the margin as needed for better spacing around the image */
+}
+
+
+
+nav a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.active {
+    color: #ffcc00;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #ffcc00;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    font-family: 'Open Sans',sans-serifs;
+    max-width: 800px;
+    padding: 20px
+}
+
+/* About Us page styles */
+.about-us {
+    text-align: left;
+}
+
+.team-member {
+    display: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+.team-member img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team-member h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+div .team-member{
+    color: rgb(54, 93, 117);
+    padding: 10px;
+    display: block; 
+}
+
+/* Footer styles */
+footer a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+footer {
+    background-color: #6654a7;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+footer {
+    display: horizontal;
+    justify-content: flex-end;
+  }
+  
+footer img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+footer p{
+   margin: 0;
+}
+  
