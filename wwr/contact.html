@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - [Your Company Name]</title>
+    <meta name="description" content="Get in touch with us for any inquiries, reservations, or suggestions.">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <h1>Rafting Adventures</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="company-info">
+            <h1>Contact Us</h1>
+            <p>Address: B/F 62</p>
+            <p>Phone: +263 77 691 3341</p>
+            <p>Email: sibandatafadzwa078@gmail.com</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450942!2d144.9630579153168!3d-37.81627997975133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5778fe1a6e05c5a!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1632841934000!5m2!1sen!2sau"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section id="employees">
+            <h2>Our Team</h2>
+            <div class="employee">
+                <img src="images/employee 1.jpeg" alt="Employee 1" width="300">
+                <p>John Doe - Tour Guide</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee 2.jpeg" alt="Employee 2" width="300">
+                <p>Jane Smith - Customer Service</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee 3.jpeg" alt="Employee 3" width="300">
+                <p>Mike Brown - Safety Officer</p>
+            </div>
+        </section>
+        <section id="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit_contact_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <fieldset>
+                    <legend>Purpose of the message:</legend>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 🦀2024 Rafting Adventures. All rights reserved.🦀</p>
+    </footer>
+</body>
+</html>
