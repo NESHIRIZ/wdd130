@@ -21,6 +21,18 @@
     color: #333;
     background-color: #f9f9f9;
     }
+
+    body {
+        font-family: 'Lato', sans-serif;
+      }
+      
+      h1, h2, h3 {
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      .optional-class {
+        font-family: 'Open Sans', sans-serif;
+      }
     
     /* Header Styles */
     
@@ -114,13 +126,13 @@
         background-position: center;
         height: 600px;
         width: 1500px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-image.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-image.jpeg');
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
 
     
-    .hero h1 {
+    .hero h1, .hero article {
         position: absolute;
         top: 10%; /* Changed from 50% to 10% */
         left: 50%;
@@ -130,7 +142,9 @@
         font-family: var(--heading-font);
         text-align: center;
       }
-    
+      
+      .hero img { float: right; margin-left: 20px; }
+
     .hero p {
         position: absolute;
         top: 60%;
@@ -139,6 +153,12 @@
         color: #380303;
         font-size: 18px;
         text-align: center;
+    }
+
+    .hero-title {
+      color: #fff;
+      font-size: 36px;
+      margin-bottom: 20px;
     }
     
     .hero button {
@@ -162,10 +182,10 @@
     
     .happy-client {
         position: absolute;
-        top: 55%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-align: bottom;
+        text-align: center;
         color: #fff;
       }
       
@@ -230,6 +250,8 @@
     width: 24px;
     height: 24px;
     }
+
+    .social-media a { text-decoration: none; }
     
     /* Footer Styles */
     
