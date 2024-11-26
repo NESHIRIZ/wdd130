@@ -248,10 +248,15 @@
         margin-right: 20px;
       }
       
-    
-    .sociallinks img {
-    width: 24px;
-    height: 24px;
+
+  .sociallinks a {
+    text-decoration: none; /* Removes underline from links */
+    }
+
+  .sociallinks img {
+     width: 24px; /* Adjust as needed */
+     height: 24px; /* Adjust as needed */
+     display: inline-block; /* Ensures the images align correctly */
     }
 
     .social-media a { text-decoration: none; }
