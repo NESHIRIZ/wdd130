@@ -282,6 +282,7 @@
     .team-member img {
       border-radius: 50%;
     }
+
     
     
     
@@ -335,5 +336,14 @@
       width: 24px;
       height: 24px;
      }
-    
-    
+      
+      .trip {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+      
+      .trip img {
+      width: 500px;
+      height: 500px;
+      }
