@@ -337,13 +337,11 @@
       height: 24px;
      }
       
-      .trip {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      }
+
       
       .trip img {
       width: 500px;
       height: 500px;
       }
+
+    
