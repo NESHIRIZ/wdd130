@@ -1,66 +1,210 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif; /* Sets a clean and readable font */
+  background-color: #f4f4f9; /* Light gray background for better contrast */
+  color: #333; /* Dark gray text for readability */
+  margin: 0; /* Removes default browser margin */
+  padding: 0; /* Removes default browser padding */
+  text-align: center; /* Centers text by default */
+}
+/* Navbar Styling */
 header {
-    background-color: #0000FF; /* blue background _/
-    color: #FFFFFF; /_ white text */
-    padding: 1rem;
-    text-align: center;
-    }
+  background-color: #0000FF; /* Blue background for the navbar */
+  padding: 1rem 2rem; /* Adds spacing around the navbar */
+}
 
-    nav {
-        background-color: darkblue;
-        padding: 10px;
-      }
+.navbar {
+  list-style: none; /* Removes bullet points */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Aligns items horizontally */
+  justify-content: flex-end;; /* Aligns links to the right */
+  align-items: center; /* Vertically centers items */
+}
 
-      nav a {
-        color: white;
-        display: block;
-        padding: 20px;
-      }
+.navbar li {
+  margin-right: 1.5rem; /* Adds spacing between navbar items */
+}
 
-    h1 {
-        color: darkblue;
-      }
+.navbar a {
+  text-decoration: none; /* Removes underline from links */
+  color: rgb(243, 226, 226); /* White text for contrast */
+  font-size: 1rem; /* Standard font size */
+  font-weight: bold; /* Bold text for emphasis */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover animation */
+}
 
-    img {
-        width: 150px;
-        height: auto;
-        border: 1px solid black;
-        padding: 2px;
-        box-shadow: 0 0 30px gray;
-      }
-    p {
-        padding: 10px;
-      }
+.navbar a:hover {
+  color: #7260d6; /* Light blue color on hover */
+  transform: scale(1.1); /* Slightly enlarges the text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stacks items vertically */
+    align-items: flex-start; /* Aligns items to the left */
+  }
+
+  .navbar li {
+    margin-bottom: 1rem; /* Adds spacing between items vertically */
+  }
+}
+
+/* Hero Section Styling */
+.hero {
+  display: flex; /* Enables flexbox for layout */
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Adds space between content and image */
+  padding: 2rem; /* Adds spacing inside the section */
+  background: linear-gradient(to right, #0000FF, #87CEFA); /* Gradient background for visual appeal */
+  color: white; /* White text to contrast with the background */
+  min-height: 80vh; /* Ensures the section fills most of the viewport */
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.hero-content {
+  max-width: 600px; /* Limits the content width for readability */
+  text-align: left; /* Aligns text to the left for better structure */
+}
+
+.hero h1 {
+  font-size: 3rem; /* Large font size for the main heading */
+  margin: 0; /* Removes default margin */
+  font-weight: bold; /* Makes the text bold */
+}
+
+.hero h2 {
+  font-size: 1.5rem; /* Slightly smaller heading for the subtitle */
+  margin: 1rem 0; /* Adds spacing around the subtitle */
+  color: #f0f0f0; /* Light gray color for subtle contrast */
+}
+
+.hero p {
+  font-size: 1.2rem; /* Increases paragraph text size */
+  line-height: 1.6; /* Adds space between lines for readability */
+  margin-bottom: 2rem; /* Adds spacing below the paragraph */
+}
+
+.cta-button {
+  background-color: #ffffff; /* White button background */
+  color: #3131b9; /* Blue text for contrast */
+  padding: 0.8rem 1.5rem; /* Adds padding inside the button */
+  font-size: 1rem; /* Standard font size for buttons */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounds the button corners */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.cta-button:hover {
+  background-color: #86bee0; /* Changes background on hover */
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+.hero-image {
+  max-width: 400px; /* Limits image width */
+  flex: 1; /* Ensures the image adjusts proportionally */
+}
+
+.hero-image img {
+  width: 100%; /* Ensures the image scales to its container */
+  border-radius: 10px; /* Rounds the image corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the image */
+}
+
+/* Skills Section Styling */
+.top-skills {
+  padding: 2rem; /* Adds spacing around the section */
+}
+
+.top-skills h2 {
+  font-size: 2rem; /* Large heading for the section title */
+  margin-bottom: 2rem; /* Adds spacing below the title */
+  color: #0000FF; /* Blue color to match the theme */
+}
+
+/* Card Container */
+.card-container {
+  display: flex; /* Enables flexbox for layout */
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  justify-content: center; /* Centers the cards */
+  gap: 1.5rem; /* Adds spacing between cards */
+}
+
+/* Individual Card Styling */
+.card {
+  background-color: #fff; /* White background for the card */
+  border-radius: 10px; /* Rounds the card corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+  max-width: 300px; /* Limits the card width */
+  padding: 1rem; /* Adds padding inside the card */
+  text-align: center; /* Centers the text inside the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves the card up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover */
+}
+
+.card h3 {
+  font-size: 1.5rem; /* Large font size for the card title */
+  color: darkblue; /* Dark blue color for emphasis */
+  margin-bottom: 1rem; /* Adds spacing below the title */
+}
+
+.card img {
+  width: 100%; /* Ensures the image fills the card width */
+  border-radius: 10px; /* Rounds the image corners */
+  margin-bottom: 1rem; /* Adds spacing below the image */
+}
+
+.card p {
+  font-size: 1rem; /* Standard font size for text */
+  margin-bottom: 1.5rem; /* Adds spacing below the text */
+  color: #555; /* Subtle gray text for readability */
+}
+
+/* Button Styling for Cards */
+.view-work-btn {
+  background-color: #0000FF; /* Blue button background */
+  color: white; /* White text for contrast */
+  border: none; /* Removes default border */
+  padding: 0.5rem 1rem; /* Adds padding inside the button */
+  font-size: 1rem; /* Standard font size for buttons */
+  border-radius: 5px; /* Rounds the button corners */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover animation */
+}
+
+.view-work-btn:hover {
+  background-color: darkblue; /* Changes background on hover */
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stacks hero content and image vertically */
+    text-align: center; /* Centers text on smaller screens */
+  }
+
+  .hero-content {
+    max-width: 100%; /* Allows the content to fill the screen */
+    margin-bottom: 2rem; /* Adds spacing below the content */
+  }
+
+  .card-container {
+    flex-direction: column; /* Stacks cards vertically */
+    align-items: center; /* Centers cards */
+  }
+
+  .card {
+    max-width: 90%; /* Ensures cards are responsive */
+  }
+}
+
     
-    main {
-    max-width: 840px;
-    }
     
-    main img {
-    width: 150px;
-    height: auto;
-    }
     
-    aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    }
-    
-    aside img {
-    width: 200px;
-    height: auto;
-    }
-    
-    p {
-    padding: 0;
-    }
-    
-    footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-    }

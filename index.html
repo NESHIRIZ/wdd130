@@ -1,42 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="Explore the wonderful world of Tafadzwa Sibanda, this is mind blowing and exciting adventure. This page is meant to show the true personality of Tafadzwa Sibanda as he pursues his degree to be a proffessional Web Designer. Course WWD130.">
-  <meta name="author" content="TAFADZWA SIBANDA">
-  <title>TAFADZWA SIBANDA | WDD 130</title>
-  <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the wonderful world of Tafadzwa Sibanda. This page showcases his exciting journey as he pursues his degree to become a professional Web Designer in WDD 130.">
+  <meta name="author" content="Tafadzwa Sibanda">
+  <title>Tafadzwa Sibanda | WDD 130</title>
+  <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="#">Home</a>
-      <a href="wwr/">White Water Rafting Website</a>
-      <a href="wwr/Site-plan-rafting.html">White Water Site-plan-rafting</a>
-      <a href="wwr/about.html">About Us</a>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
+
+
   <main>
-    <h1>TAFADZWA SIBANDA | WDD 130</h1>
-    <img src="images/taffy.jpeg" alt="Hello, my name is TAFADZWA SIBANDA" width="200">
-    <p>Hello! My name is TAFADZWA SIBANDA and I am from Zimbabwe. I am 24 years old, I enjoy playing soccer.
-        I love nature and other things that make me happy. The most interesting thing aabout me is I love and 
-        appreciate everyone and what they do for and how it benefits me.
-    </p>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Tafadzwa Sibanda</h1>
+        <h2>WDD 130 Student | Aspiring Web Designer</h2>
+        <p>
+          Hello! My name is Tafadzwa Sibanda, and I am from Zimbabwe. I am 24 years old and enjoy playing soccer.
+          I love nature and other things that bring me happiness. The most interesting thing about me is that I
+          deeply appreciate everyone and the contributions they make to my life.
+        </p>
+      <a href="#my-skills">  <button class="cta-button">Explore My Work</button></a>
+      </div>
+      <div class="hero-image">
+        <img src="images/taffy.jpeg" alt="Tafadzwa Sibanda">
+      </div>
+    </section>
   </main>
 
-  <aside>
-    <h2>Source of the Nile Uganda</h2>
-    <img src="images/jinja.jpeg" alt="Uganda's source of the Nile">
-    <p>"Being the source of the great Nile river and home to a large species of aqautic life, the source 
-      of Nile is located in Jinja Uganda. The first European explore to reach it was John Speke in 1858 confirmed that 
-      this is the source of the great Nile river."</p>
-  </aside>
+  <div class="top-skills" id="my-skills">
+    <h2>My Skills</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Web Development</h3>
+        <img src="images/WebDev1.jpeg" alt="Web Development">
+        <p>
+          Build responsive, interactive, and visually appealing websites tailored to client needs.
+        </p>
+        <button class="view-work-btn">View My Work</button>
+      </div>
+      <div class="card">
+        <h3>Graphic Design</h3>
+        <img src="images/GraphicDesign.jpeg" alt="Graphic Design">
+        <p>
+          Create stunning visual designs that communicate effectively and captivate audiences.
+        </p>
+        <button class="view-work-btn">View My Work</button>
+      </div>
+      <div class="card">
+        <h3>Animation</h3>
+        <img src="images/Animation.jpeg" alt="Animation">
+        <p>
+          Craft engaging animations that bring stories to life and captivate viewers.
+        </p>
+        <button class="view-work-btn">View My Work</button>
+      </div>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; 2024 TAFADZWA SIBANDA Zimbabwe &#x1F525;</p>
+    <p>&copy; 2024 Tafadzwa Sibanda, Zimbabwe &#x1F525;</p>
+    <nav class="sociallinks">
+      <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.svg" alt="Instagram">
+    </a>
   </footer>
 </body>
 </html>
-
